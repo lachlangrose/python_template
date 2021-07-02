@@ -31,12 +31,16 @@ jobs:
       with:
         name: windows
         path: conda/win-64/*.tar.bz2
-#      publish:
-#     runs-on: ubuntu-latest
-#     steps:
-  upload:
-      needs: windows
-      runs-on: ubuntu-latest
+    - name: upload
+      shell: powershell
+      env:
+        ANACONDA_API_TOKEN: ${{ secrets.ANACONDA }}
+      run: | 
+        conda install anaconda-client
+        anaconda upload --label main win-64/*.tar.bz2 
+#   upload:
+#       needs: windows
+#       runs-on: ubuntu-latest
       steps:
       - name: Download artifacts
         uses: actions/download-artifact@v2
