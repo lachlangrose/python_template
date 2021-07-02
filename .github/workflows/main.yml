@@ -35,6 +35,7 @@ jobs:
 #     runs-on: ubuntu-latest
 #     steps:
   upload:
+      needs: windows
       runs-on: ubuntu-latest
       steps:
       - name: Download artifacts
