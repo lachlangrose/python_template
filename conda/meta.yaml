@@ -1,0 +1,27 @@
+{% set name = "mylibrary" %}
+{% set version = load_setup_py_data().version %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  path: ../
+
+build:
+  number: 0
+  # script: "{{ PYTHON }} -m pip install ."
+
+
+
+
+about:
+  license: MIT
+  license_family: MIT
+  license_file: 
+  summary: "Implicit 3D geological modelling library"
+  dev_url: 
+
+extra:
+  recipe-maintainers:
+    - lachlangrose
