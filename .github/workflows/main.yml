@@ -49,5 +49,6 @@ jobs:
            activate-environment: loop
       - name: upload
         run: |
+         conda install -y anaconda-client
          anaconda upload windows/*
         
