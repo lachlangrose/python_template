@@ -22,17 +22,14 @@ jobs:
       with:
         python-version: ${{ matrix.python }} 
         activate-environment: loop    
-    - name: Conda build
-#       shell: powershell
-      run: |
-        conda install -c conda-forge conda-build scikit-build numpy=1.20 cython
-        conda build -c anaconda -c conda-forge -c loop3d --output-folder conda conda
-    - name: upload
+    - name: Conda build'
       env:
         ANACONDA_API_TOKEN: ${{ secrets.ANACONDA }}
-      run: | 
-        conda install anaconda-client
-        anaconda -v -t ${{ secrets.ANACONDA }} upload --label main conda/win-64/*.tar.bz2 --force
+#       shell: powershell
+      run: |
+        conda install -c conda-forge conda-build scikit-build numpy=1.20 cython anaconda-client
+        conda build -c anaconda -c conda-forge -c loop3d --output-folder conda conda
+        anaconda upload --label main conda/win-64/*.tar.bz2 
 #   upload:
 #       needs: windows
 #       runs-on: ubuntu-latest
