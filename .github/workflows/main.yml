@@ -41,18 +41,18 @@ jobs:
 #   upload:
 #       needs: windows
 #       runs-on: ubuntu-latest
-      steps:
-      - name: Download artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: windows
-      - name: install anaconda
-        uses: conda-incubator/setup-miniconda@v2
-        with:
-           python-version: 3.8
-           activate-environment: loop
-      - name: upload
-        run: |
-         conda install -y anaconda-client
-         anaconda upload windows/*
+#       steps:
+#       - name: Download artifacts
+#         uses: actions/download-artifact@v2
+#         with:
+#           name: windows
+#       - name: install anaconda
+#         uses: conda-incubator/setup-miniconda@v2
+#         with:
+#            python-version: 3.8
+#            activate-environment: loop
+#       - name: upload
+#         run: |
+#          conda install -y anaconda-client
+#          anaconda upload windows/*
         
