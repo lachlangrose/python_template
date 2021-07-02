@@ -37,7 +37,7 @@ jobs:
         ANACONDA_API_TOKEN: ${{ secrets.ANACONDA }}
       run: | 
         conda install anaconda-client
-        anaconda upload --label main win-64/*.tar.bz2 
+        anaconda upload --label main win-64/*.tar.bz2 -v
 #   upload:
 #       needs: windows
 #       runs-on: ubuntu-latest
