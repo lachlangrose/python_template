@@ -31,16 +31,35 @@ jobs:
 #         conda build -c anaconda -c conda-forge -c loop3d --output-folder conda conda
 #         conda install anaconda-client -y
 #         anaconda upload --label main conda/win-64/*.tar.bz2 
-  upload:
-      runs-on: ubuntu-latest
-      steps:
-      - name: install anaconda
-        uses: conda-incubator/setup-miniconda@v2
+#   upload:
+#       runs-on: ubuntu-latest
+#       steps:
+#       - name: install anaconda
+#         uses: conda-incubator/setup-miniconda@v2
+#         with:
+#            python-version: 3.8
+#            activate-environment: loop
+#       - name: upload
+#         run: |
+#          conda install -y anaconda-client
+#          anaconda 
+# jobs:
+  example-1:
+    name: Ex1 (${{ matrix.python-version }}, ${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ["ubuntu-latest", "macos-latest", "windows-latest"]
+        python-version: ["3.7", "2.7"]
+    steps:
+      - uses: conda-incubator/setup-miniconda@v2
         with:
-           python-version: 3.8
-           activate-environment: loop
-      - name: upload
-        run: |
-         conda install -y anaconda-client
-         anaconda 
-        
+          auto-update-conda: true
+          python-version: ${{ matrix.python-version }}
+      - name: Conda info
+        shell: bash -l {0}
+        run: conda info
+      - name: Conda list
+        shell: pwsh
+        run: conda list
