@@ -66,7 +66,7 @@ jobs:
       - name: Conda list
         shell: pwsh
         run: conda list
-     - name: run anaconda
-       shell: bash -l {0}
-       run: anaconda 
+      - name: run anaconda
+        shell: bash -l {0}
+        run: anaconda 
      
