@@ -39,10 +39,12 @@ jobs:
            anaconda upload --label main win-64/*.tar.bz2 
       - name: upload linux
         if: matrix.os == 'ubuntu-latest'
+        shell: bash -l {0}
         run: |
            anaconda upload --label main linux-64/*.tar.bz2 
       - name: upload macosx
         if: matrix.os == 'macos-latest'
+        shell: bash -l {0}
         run: |
             anaconda upload --label main osx-64/*.tar.bz2
 
