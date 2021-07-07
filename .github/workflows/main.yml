@@ -6,7 +6,7 @@ jobs:
   conda-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: loop3d/publish_to_conda@latest
+      - uses: loop3d/publish_to_conda@0.1
         with:
            token: ${{ secrets.ANACONDA }}
 #     name: Uploading to Loop3d for python ${{ matrix.os }})
