@@ -34,15 +34,21 @@ jobs:
            conda build -c anaconda -c conda-forge -c loop3d --output-folder conda conda
            conda install anaconda-client -y
       - name: upload windows
+        env:
+          ANACONDA_API_TOKEN: ${{ secrets.ANACONDA }}
         if: matrix.os == 'windows-2016'
         run: |
            anaconda upload --label main win-64/*.tar.bz2 
       - name: upload linux
+        env:
+          ANACONDA_API_TOKEN: ${{ secrets.ANACONDA }}
         if: matrix.os == 'ubuntu-latest'
         shell: bash -l {0}
         run: |
            anaconda upload --label main linux-64/*.tar.bz2 
       - name: upload macosx
+        env:
+          ANACONDA_API_TOKEN: ${{ secrets.ANACONDA }}
         if: matrix.os == 'macos-latest'
         shell: bash -l {0}
         run: |
