@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.1.2](https://www.github.com/lachlangrose/python_template/compare/v0.1.1...v0.1.2) (2021-09-07)
+
+
+### Bug Fixes
+
+* tiggering action ([dc2d424](https://www.github.com/lachlangrose/python_template/commit/dc2d424ce02f2d99b214bf4ed0059dfdb76069f6))
+* token is a bad idea ([db567f5](https://www.github.com/lachlangrose/python_template/commit/db567f53b0d67d5d46019f3bcdc1bdccc5d93816))
+
 ### [0.1.1](https://www.github.com/lachlangrose/python_template/compare/v0.1.0...v0.1.1) (2021-09-07)
 
 
