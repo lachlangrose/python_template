@@ -14,6 +14,13 @@ def get_version(rel_path):
             return line.split(delim)[1]
     else:
         raise RuntimeError("Unable to find version string.")
+	
+package_root = os.path.abspath(os.path.dirname(__file__))
+
+version = {}
+with open(os.path.join(package_root, "version.py")) as fp:
+    exec(fp.read(), version)
+version = version["__version__"]
 
 setup(
 	name="MyLibrary",
