@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.4](https://www.github.com/lachlangrose/python_template/compare/v0.1.3...v0.1.4) (2021-09-07)
+
+
+### Bug Fixes
+
+* testing action triggering action ([49ebc7e](https://www.github.com/lachlangrose/python_template/commit/49ebc7e05d788523c825682c31bafdb22d11d7f3))
+
 ### [0.1.3](https://www.github.com/lachlangrose/python_template/compare/v0.1.2...v0.1.3) (2021-09-07)
 
 
