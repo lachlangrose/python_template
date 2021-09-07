@@ -12,3 +12,4 @@ jobs:
           release-type: python
           package-name: python_template
           version-file: "VERSION"
+          token: ${{ secrets.ACCESS }}
