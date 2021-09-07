@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.3](https://www.github.com/lachlangrose/python_template/compare/v0.1.2...v0.1.3) (2021-09-07)
+
+
+### Bug Fixes
+
+* setting draft to true ([3e26e19](https://www.github.com/lachlangrose/python_template/commit/3e26e19652ebb74992acf05fc9977b054cded6db))
+
 ### [0.1.2](https://www.github.com/lachlangrose/python_template/compare/v0.1.1...v0.1.2) (2021-09-07)
 
 
