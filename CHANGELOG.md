@@ -1,5 +1,15 @@
 # Changelog
 
+### [0.1.1](https://www.github.com/lachlangrose/python_template/compare/v0.1.0...v0.1.1) (2021-09-07)
+
+
+### Bug Fixes
+
+* adding version file ([a5acae7](https://www.github.com/lachlangrose/python_template/commit/a5acae737dc88899f730360ef58cb3e67baacc83))
+* adding version from version.py to setup.py ([16c3201](https://www.github.com/lachlangrose/python_template/commit/16c3201cd7f95829af402cbb25defea8f455dea0))
+* changing version source ([4ad6f4b](https://www.github.com/lachlangrose/python_template/commit/4ad6f4bc1423b697399dbae52c8b9534b38231b3))
+* sourcing version number from setup.cfg ([079d96d](https://www.github.com/lachlangrose/python_template/commit/079d96d107dd6a0f094f00e909ca97e71f3f6807))
+
 ## 0.1.0 (2021-09-07)
 
 
