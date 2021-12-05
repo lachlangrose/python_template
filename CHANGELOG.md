@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.11](https://www.github.com/lachlangrose/python_template/compare/v0.1.10...v0.1.11) (2021-12-05)
+
+
+### Bug Fixes
+
+* bump ([37354be](https://www.github.com/lachlangrose/python_template/commit/37354be5bb353a0c065f1903df17ed45025dec18))
+
 ### [0.1.10](https://www.github.com/lachlangrose/python_template/compare/v0.1.9...v0.1.10) (2021-12-05)
 
 
