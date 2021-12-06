@@ -1,5 +1,15 @@
 # Changelog
 
+### [0.2.3](https://www.github.com/lachlangrose/python_template/compare/v0.2.2...v0.2.3) (2021-12-06)
+
+
+### Bug Fixes
+
+* monster ([92c2c33](https://www.github.com/lachlangrose/python_template/commit/92c2c3367d0ce79fc200f9579d74f037b7a9e570))
+* more ([0c66b1d](https://www.github.com/lachlangrose/python_template/commit/0c66b1da9bae9a80f8a64d81f33abb651c9e9246))
+* tesitng ([7f77029](https://www.github.com/lachlangrose/python_template/commit/7f77029501474e8d28c296de7b304300158cea8f))
+* test ([1a42a9d](https://www.github.com/lachlangrose/python_template/commit/1a42a9d55578796009f1437fe42a73794b7d54f2))
+
 ### [0.2.2](https://www.github.com/lachlangrose/python_template/compare/v0.2.1...v0.2.2) (2021-12-06)
 
 
