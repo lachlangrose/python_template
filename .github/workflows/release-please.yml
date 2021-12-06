@@ -14,7 +14,7 @@ jobs:
           release-type: python
           package-name: python_template
           draft: True
-  
+      - run: echo ${{ steps.release.outputs.release_created }}
   documentation:
     runs-on: ubuntu-latest
     needs: release-please
