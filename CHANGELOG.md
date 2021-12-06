@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.2.4](https://www.github.com/lachlangrose/python_template/compare/v0.2.3...v0.2.4) (2021-12-06)
+
+
+### Bug Fixes
+
+* action magic ([89596b0](https://www.github.com/lachlangrose/python_template/commit/89596b05251d4fc38dc8b37b1f0c4ca83325ebe6))
+* mmm ([d61deb6](https://www.github.com/lachlangrose/python_template/commit/d61deb607446713589a332e01ea37169ebb5a4b4))
+
 ### [0.2.3](https://www.github.com/lachlangrose/python_template/compare/v0.2.2...v0.2.3) (2021-12-06)
 
 
