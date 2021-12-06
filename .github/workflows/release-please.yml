@@ -22,6 +22,6 @@ jobs:
   documentation:
     runs-on: ubuntu-latest
     needs: release-please
-#     if: 
+    if: ${{ needs.release-please.outputs.release_created }}
     steps:
       - run: echo "results are ${{ needs.release-please.outputs.release_created }}"
