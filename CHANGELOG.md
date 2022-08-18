@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.5](https://www.github.com/lachlangrose/python_template/compare/v0.2.4...v0.2.5) (2022-08-18)
+
+
+### Bug Fixes
+
+* triggering release ([86a8a34](https://www.github.com/lachlangrose/python_template/commit/86a8a345213b2c5d59987772f161c6b71cf72c80))
+
 ### [0.2.4](https://www.github.com/lachlangrose/python_template/compare/v0.2.3...v0.2.4) (2021-12-06)
 
 
