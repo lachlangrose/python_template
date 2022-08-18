@@ -14,6 +14,7 @@ jobs:
           release-type: python
           package-name: python_template
           draft: True
+          include-v-in-tag: false
       - name: test 
         run: echo "hello"
         if:  ${{ steps.release.outputs.release_created }}
